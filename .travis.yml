@@ -14,8 +14,12 @@ before_script:
 script:
   - ng build --prod --aot
 
-after_success:
-  - firebase deploy --token "$FIREBASE_TOKEN"
+
+
+deploy:
+  provider: firebase
+  token:
+    secure: "$FIREBASE_TOKEN"
 
 notifications:
   email:
