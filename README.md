@@ -1,5 +1,6 @@
 # FireBaseApplication
-https://travis-ci.org/justinhorton3/FirebaseApplication.svg?branch=master 
+
+[![Build Status](https://travis-ci.org/justinhorton3/FirebaseApplication.svg?branch=master)](https://travis-ci.org/justinhorton3/FirebaseApplication)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
