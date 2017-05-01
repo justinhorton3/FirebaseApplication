@@ -7,20 +7,14 @@ branches:
     - master
 
 before_script:
-  - psql -c "CREATE USER testuser WITH PASSWORD 'testuser';" -U postgres
   - npm install -g firebase-tools
   - npm install -g @angular/cli
 
 script:
-  - ng build --prod --aot
+  - ng build --prod
 
 after_success:
-  - firebase deploy --token "$FIREBASE_TOKEN"
-
-deploy:
-  provider: firebase
-  token:
-    secure: "$FIREBASE_TOKEN"
+  - firebase deploy --token $FIREBASE_TOKEN
 
 notifications:
   email:
