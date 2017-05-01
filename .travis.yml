@@ -14,7 +14,15 @@ script:
   - ng build --prod
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+
+before_deploy: "echo 'ready?'"
+
+deploy:
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
+
+after_deploy: "echo 'Delploy FINISHED'"
 
 notifications:
   email:
