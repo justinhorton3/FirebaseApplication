@@ -13,16 +13,10 @@ before_script:
 script:
   - ng build --prod 
 
-after_success:
-
-before_deploy: "echo 'ready?'"
-
 deploy:
   provider: firebase
   token:
     secure: "$FIREBASE_TOKEN"
-
-after_deploy: "echo 'Delploy FINISHED'"
 
 notifications:
   email:
