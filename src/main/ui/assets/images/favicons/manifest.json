@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "FireBaseApplication",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,6 +13,6 @@
         }
     ],
     "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "background_color": "#ffdd00",
     "display": "standalone"
 }
